@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Hafizullah Ozgur</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fb;
+      color: #1f2937;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 40px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      color: #2563eb;
+      font-size: 18px;
+    }
+
+    nav a {
+      margin-left: 18px;
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .header p {
+      color: #6b7280;
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* PROJECT GRID */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px 80px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef5ff;
+      color: #2563eb;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      margin-right: 5px;
+      margin-top: 8px;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Hafizullah Ozgur</div>
+    <div>
+      <a href="home.html">Home</a>
+      <a href="projects.html" style="color:#2563eb;">Projects</a>
+      <a href="resume.html">Resume</a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Projects</h1>
+    <p>
+      Real-world enterprise systems built for banking, POS devices,
+      payment processing, and financial integrations.
+    </p>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="grid">
+
+      <!-- PROJECT 1 -->
+      <div class="card">
+        <h3>POS Payment Integration System</h3>
+        <p>
+          Developed EMV-based POS applications integrated with banking
+          systems for transaction processing and authorization flows.
+        </p>
+        <span class="tag">C#</span>
+        <span class="tag">EMV</span>
+        <span class="tag">ISO8583</span>
+        <span class="tag">Android POS</span>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="card">
+        <h3>ISO 8583 Financial Messaging System</h3>
+        <p>
+          Designed and implemented ISO 8583 message parsing and routing
+          system for banking transaction communication.
+        </p>
+        <span class="tag">ISO8583</span>
+        <span class="tag">.NET</span>
+        <span class="tag">TCP/IP</span>
+        <span class="tag">Oracle</span>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="card">
+        <h3>Card Personalization Platform</h3>
+        <p>
+          Built backend systems for bank card personalization,
+          including data preparation, encryption, and printing workflows.
+        </p>
+        <span class="tag">Java</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">RSA</span>
+        <span class="tag">3DES</span>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="card">
+        <h3>Bank Integration Middleware</h3>
+        <p>
+          Middleware APIs connecting POS devices with banking systems,
+          handling secure transaction routing and response mapping.
+        </p>
+        <span class="tag">.NET 8</span>
+        <span class="tag">Docker</span>
+        <span class="tag">IBMMQ</span>
+        <span class="tag">API</span>
+      </div>
+
+      <!-- PROJECT 5 -->
+      <div class="card">
+        <h3>Enterprise Queue System</h3>
+        <p>
+          Built queue-based transaction processing system for high-volume
+          banking operations using IBM MQ infrastructure.
+        </p>
+        <span class="tag">IBMMQ</span>
+        <span class="tag">C#</span>
+        <span class="tag">Microservices</span>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Hafizullah Ozgur | Projects Portfolio
+  </footer>
+
+</body>
+</html>

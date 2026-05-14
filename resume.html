@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hafizullah Ozgur CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: #f5f7fa;
+        color: #222;
+        padding: 40px;
+        line-height: 1.7;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 40px;
+      }
+      .title {
+        color: #380db0;
+      }
+
+      .text {
+        color: #4b5563;
+      }
+
+      .accent {
+        color: #2563eb;
+      }
+      .sidebar {
+        background: #eef2f7;
+        padding: 35px;
+        border-radius: 20px;
+        border: 1px solid #e5e5e5;
+        height: fit-content;
+        position: sticky;
+        top: 20px;
+      }
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+      .profile-image {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 25px;
+        border: 4px solid #ffffff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-info h1 {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 12px;
+        color: #0066cc;
+      }
+
+      .profile-info p {
+        color: #0066cc;
+        font-weight: 600;
+      }
+
+      .profile h1 {
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        color: #0066cc;
+      }
+
+      .profile p {
+        color: #0066cc;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+
+      .small-section {
+        margin-bottom: 35px;
+      }
+
+      .small-section h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #0066cc;
+        margin-bottom: 15px;
+      }
+
+      .small-section p,
+      .small-section li {
+        font-size: 14px;
+        color: #444;
+      }
+
+      .small-section ul {
+        padding-left: 18px;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .card {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 20px;
+        padding: 40px;
+      }
+
+      .card-title {
+        font-size: 34px;
+        margin-bottom: 30px;
+        color: #0066cc;
+      }
+
+      .summary {
+        color: #444;
+        font-size: 17px;
+        line-height: 1.9;
+      }
+
+      .experience-item {
+        border-left: 3px solid #0066cc;
+        padding-left: 25px;
+        margin-bottom: 35px;
+      }
+
+      .experience-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .date {
+        color: #0066cc;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .company {
+        font-size: 28px;
+        font-weight: 700;
+        color: #0066cc;
+        margin-bottom: 8px;
+      }
+
+      .role {
+        color: #777;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .experience-item p {
+        color: #444;
+      }
+
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .badge {
+        background: #eef5ff;
+        color: #0055aa;
+        border: 1px solid #d5e7ff;
+        padding: 8px 14px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+      }
+
+      .skill {
+        background: #f5f7fa;
+        border: 1px solid #e5e5e5;
+        padding: 18px;
+        border-radius: 14px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .education-item {
+        margin-bottom: 25px;
+      }
+
+      .education-item h3 {
+        margin-bottom: 8px;
+        color: #0066cc;
+      }
+
+      .education-item p {
+        color: #555;
+      }
+
+      @media (max-width: 1000px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          position: relative;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="profile-image">
+            <img src="profile1.jpg" alt="Hafizullah Ozgur" />
+          </div>
+
+          <div class="profile-info">
+            <h1>
+              Hafizullah<br />
+              Ozgur
+            </h1>
+
+            <p>Senior POS & Payment Systems Developer</p>
+          </div>
+        </div>
+
+        <div class="small-section">
+          <h3>CONTACT INFORMATION</h3>
+
+          <p>Email: hafizullah.ozgur@gmail.com</p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/hafizullah-ozgur/"
+              target="_blank"
+            >
+              linkedin
+            </a>
+          </p>
+          <p>Address: Istanbul</p>
+          <p>Phone: +90 507 609 0344</p>
+          <p>Date of Birth: 15 Feb. 1988</p>
+          <p>Marital Status: Married</p>
+          <p>Children: 1</p>
+        </div>
+
+        <div class="small-section">
+          <h3>CORE TECHNOLOGIES</h3>
+
+          <ul>
+            <li>C#</li>
+            <li>ISO8583</li>
+            <li>EMV</li>
+            <li>TLV</li>
+            <li>Kotlin</li>
+            <li>Java</li>
+            <li>.NET 6/7/8</li>
+            <li>Docker</li>
+            <li>Oracle</li>
+            <li>IBMMQ</li>
+            <li>RSA</li>
+            <li>DES / 3DES</li>
+            <li>OpenSSL</li>
+            <li>Angular</li>
+            <li>Python</li>
+            <li>C/C++</li>
+          </ul>
+        </div>
+
+        <div class="small-section">
+          <h3>ARCHITECTURES</h3>
+
+          <ul>
+            <li>Onion Architecture</li>
+            <li>Domain-Driven Design</li>
+            <li>Repository Pattern</li>
+          </ul>
+        </div>
+
+        <div class="small-section">
+          <h3>DESIGN PATTERNS</h3>
+
+          <ul>
+            <li>Abstract Factory</li>
+            <li>Factory Method</li>
+            <li>Prototype</li>
+            <li>Singleton</li>
+            <li>Proxy</li>
+            <li>Adapter</li>
+            <li>Decorator</li>
+            <li>Visitor</li>
+            <li>Observer</li>
+            <li>Strategy</li>
+          </ul>
+        </div>
+
+        <div class="small-section">
+          <h3>LANGUAGE</h3>
+
+          <p>English Proficiency: 75/100</p>
+        </div>
+
+        <div class="small-section">
+          <h3>ACHIEVEMENTS</h3>
+
+          <p>Altınbaş University 100% Scholarship</p>
+          <p>Driving License: B</p>
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+
+      <main class="main">
+        <!-- SUMMARY -->
+
+        <section class="card">
+          <h2 class="card-title">Professional Summary</h2>
+
+          <p class="summary">
+            Payments and POS application development: in Java & Kotlin for
+            Türkiye and Slovakia markets - Experience with BKM TechPOS, VUK, ÖKC
+            compliance - Strong knowledge of EMV and payment terminal
+            technologies Card Personalization: Development of bank card
+            personalization applications - Building and maintaining card perso
+            management portals Backend and Programming: C#, .NET (6/7/8), Entity
+            Framework Core, LINQ, Python, C/C++ - ISO 8583 messaging, TLV
+            parsing & data handling Cryptography and security: OpenSSL, RSA, DES
+            / 3DES Infrastructure & Integration: API applications, Docker, IBMMQ
+          </p>
+        </section>
+
+        <!-- EXPERIENCE -->
+
+        <section class="card">
+          <h2 class="card-title">Experience (8+ Years)</h2>
+
+          <div class="experience-item">
+            <div class="date">Jul. 2022 – Dec. 2025</div>
+
+            <div class="company">Verisoft</div>
+
+            <div class="role">Software Developer</div>
+
+            <p>
+              Card Perso and POS app developer (Kotlin, java), ISO8583, TLV, C#,
+              Net8, Net7, Net6, API between pos device apps, IBMMQ, Docker,
+              Angular, typescript, EMV, Oracle, T-SQL, Python, C/C++, RSA, DES,
+              3DES, OpenSSL
+            </p>
+
+            <div class="badges">
+              <div class="badge">C#</div>
+              <div class="badge">Kotlin</div>
+              <div class="badge">Java</div>
+              <div class="badge">ISO8583</div>
+              <div class="badge">EMV</div>
+              <div class="badge">IBMMQ</div>
+              <div class="badge">Docker</div>
+              <div class="badge">Oracle</div>
+              <div class="badge">OpenSSL</div>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="date">Sep. 2021 – Jun. 2022</div>
+
+            <div class="company">İbn Haldun Üniversitesi</div>
+
+            <div class="role">Software Developer</div>
+
+            <p>
+              .Net 6 Core & C#, Services & Integration, JS, Ajax, JQuery, LINQ,
+              HTML5, CSS, Bootstrap, etc (Full Stack)
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <div class="date">Mar. 2020 – Sep. 2021</div>
+
+            <div class="company">Clockwork</div>
+
+            <div class="role">Software Developer</div>
+
+            <p>
+              C#, .Net, SAP Service Consuming & Integration, .Net API, JS, Ajax,
+              JQuery, LINQ, HTML5, CSS, Bootstrap, etc (Full Stack)
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <div class="date">Mar. 2018 – Feb. 2020</div>
+
+            <div class="company">MagiClick</div>
+
+            <div class="role">Software Developer</div>
+
+            <p>
+              C#, .Net, MSSQL, LINQ, NHibernate .Net Framework, Entity
+              Framework, HTML5, CSS, Javascript, JQuery, Ajax, Bootstrap,
+              HangFire, AntiXSS, CacheManager, Castle.Core, Castle.Windsor,
+              (Backend)
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <div class="date">Sep. 2017 – Feb. 2018</div>
+
+            <div class="company">Vadi Kurumsal Bilgi Sistemleri</div>
+
+            <div class="role">Software Developer</div>
+
+            <p>
+              Java Programming Language (JSF JSP technologies), Oracle (Toad),
+              Git, iReport, JavaScript, CSS, , jQuery, etc.(Backend)
+            </p>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+
+        <section class="card">
+          <h2 class="card-title">Education</h2>
+
+          <div class="education-item">
+            <h3>Yıldız Technical University</h3>
+
+            <p>M.Sc. Computer Engineering (GPA: 3.00/4.00) — Graduated 2024</p>
+          </div>
+
+          <div class="education-item">
+            <h3>Altınbaş University</h3>
+
+            <p>
+              B.Sc. Computer Engineering English 100% Scholarship (GPA:
+              2.02/4.00) — Graduated 2018
+            </p>
+          </div>
+
+          <div class="education-item">
+            <h3>Maltepe University</h3>
+
+            <p>
+              B.Sc. Software Engineering and Computer Education & Instructional
+              Technology (Farabi Exchange Program)
+            </p>
+          </div>
+
+          <div class="education-item">
+            <h3>Ondokuz Mayıs University</h3>
+
+            <p>
+              B.Sc. Computer and Instructional Technologies Education Program
+              (GPA: 2.48/4.00) — Graduated 2014
+            </p>
+          </div>
+        </section>
+
+        <!-- GENERAL INFORMATION -->
+
+        <section class="card">
+          <h2 class="card-title">General Information</h2>
+
+          <ul style="padding-left: 20px; color: #444; line-height: 2">
+            <li>
+              Developed İşbankası credit and debit transaction queue
+              applications using IBMQ.
+            </li>
+
+            <li>Developed POS applications for Slovakia and Türkiye.</li>
+
+            <li>Worked on Burgan Bank card personalization applications.</li>
+
+            <li>Worked on Boubyan Bank applications.</li>
+
+            <li>Developed many console, API and portal applications.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
