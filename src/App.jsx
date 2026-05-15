@@ -119,7 +119,7 @@ export default function App() {
       {/* MAIN */}
       <main className="main">
         <a
-          href="/assets/files/hafizozgur_cv.pdf"
+          href="/hafizozgur_cv.pdf"
           download
           className="cv-btn"
         >
