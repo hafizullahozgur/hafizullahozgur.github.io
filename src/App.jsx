@@ -118,11 +118,7 @@ export default function App() {
 
       {/* MAIN */}
       <main className="main">
-        <a
-          href="/hafizozgur_cv.pdf"
-          download
-          className="cv-btn"
-        >
+        <a href="/hafizozgur_cv.pdf" download className="cv-btn">
           Download CV
         </a>
 
@@ -133,18 +129,21 @@ export default function App() {
           <ul className="summary">
             <li>
               Payments and POS application development: in Java & Kotlin for
-              Türkiye and Slovakia markets Experience with BKM TechPOS, VUK, ÖKC compliance
-              Strong knowledge of EMV and payment terminal technologies
+              Türkiye and Slovakia markets Experience with BKM TechPOS, VUK, ÖKC
+              compliance Strong knowledge of EMV and payment terminal
+              technologies
             </li>
 
             <li>
               Card Personalization: Development of bank card personalization
-              applications Building and maintaining card personalization management portals
+              applications Building and maintaining card personalization
+              management portals
             </li>
 
             <li>
               Backend and Programming: C#, .NET (6/7/8), Entity Framework Core,
-              LINQ, Python, C/C++ ISO 8583 messaging, TLV parsing & data handling
+              LINQ, Python, C/C++ ISO 8583 messaging, TLV parsing & data
+              handling
             </li>
 
             <li>Cryptography and security: OpenSSL, RSA, DES / 3DES</li>
@@ -314,6 +313,42 @@ export default function App() {
             <li>Worked on Boubyan Bank applications.</li>
 
             <li>Developed many console, API and portal applications.</li>
+            <li>
+              M.Sc. Thesis: "Authentication in ATM/ITM Machines using Iris
+              Recognition Biometrics" (
+              <a
+                href="https://scholar.google.com/citations?user=Nq4SMkUAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Thesis
+              </a>
+              )
+            </li>
+          </ul>
+        </section>
+        <section className="card">
+          <h2 className="card-title">Thesis</h2>
+
+          <ul
+            style={{
+              paddingLeft: "20px",
+              color: "#444",
+              lineHeight: "2",
+            }}
+          >
+            <li>
+              M.Sc. Thesis: "Authentication in ATM/ITM Machines using Iris
+              Recognition Biometrics" (
+              <a
+                href="https://scholar.google.com/citations?user=Nq4SMkUAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Thesis
+              </a>
+              )
+            </li>
           </ul>
         </section>
       </main>
