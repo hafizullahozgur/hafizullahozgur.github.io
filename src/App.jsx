@@ -313,18 +313,6 @@ export default function App() {
             <li>Worked on Boubyan Bank applications.</li>
 
             <li>Developed many console, API and portal applications.</li>
-            <li>
-              M.Sc. Thesis: "Authentication in ATM/ITM Machines using Iris
-              Recognition Biometrics" (
-              <a
-                href="https://scholar.google.com/citations?user=Nq4SMkUAAAAJ&hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Thesis
-              </a>
-              )
-            </li>
           </ul>
         </section>
         <section className="card">
