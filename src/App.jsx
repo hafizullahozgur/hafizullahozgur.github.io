@@ -301,6 +301,11 @@ export default function App() {
               lineHeight: "2",
             }}
           >
+              <li>
+              Developed İşbankası Credit and Debit transaction queue applications using IBMQ lib, and worked on five other applications.
+              Developed POS applications for both Türkiye and Slovakia. Worked in Burgan bank card perso and stock applications.
+
+            </li>
             <li>
               Developed İşbankası credit and debit transaction queue
               applications using IBMQ.
