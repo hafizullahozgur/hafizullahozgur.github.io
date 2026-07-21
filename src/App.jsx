@@ -145,10 +145,16 @@ export default function App() {
               LINQ, Python, C/C++ ISO 8583 messaging, TLV parsing & data
               handling
             </li>
+            <li>
+              Frontend Technologies: React, Angular, Vue.js, Typescript, Node.js
+            </li>
 
             <li>Cryptography and security: OpenSSL, RSA, DES / 3DES</li>
             <li>
               Infrastructure & Integration: API applications, Docker, IBMMQ
+            </li>
+            <li>
+              AI Tools: Generative AI, LLMs, RAG, image processing, OCR libraries
             </li>
           </ul>
         </section>
@@ -169,7 +175,7 @@ export default function App() {
               Card Perso and POS app developer (Kotlin, java), ISO8583, TLV, C#,
               Net8, Net7, Net6, API between pos device apps, IBMMQ, Docker,
               Angular, typescript, EMV, Oracle, T-SQL, Python, C/C++, RSA, DES,
-              3DES, OpenSSL
+              3DES, OpenSSL, OpenSSL, AI, LLM, RAG, image processing, OCR
             </p>
 
             <div className="badges">
