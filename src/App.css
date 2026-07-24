@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 40px;
   font-family: "Inter", sans-serif;
-  background: #f5f7fa;
+  background: #019eaf;
   color: #222;
   text-align: left; /* IMPORTANT FIX */
 }
@@ -219,6 +219,8 @@ p {
 
 .education-item {
   margin-bottom: 25px;
+  border-left: 3px solid #0066cc;
+  padding-left: 25px;
 }
 
 .education-item h3 {
