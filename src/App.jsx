@@ -20,6 +20,9 @@ export default function App() {
             </h1>
 
             <p>Senior POS & Payment Systems Developer</p>
+            <a href="/hafizozgur_cv.pdf" download className="cv-btn">
+             Download Resume
+            </a>
           </div>
         </div>
 
@@ -118,15 +121,18 @@ export default function App() {
 
       {/* MAIN */}
       <main className="main">
-        <a href="/hafizozgur_cv.pdf" download className="cv-btn">
-          Download CV
-        </a>
 
         {/* SUMMARY */}
         <section className="card">
           <h2 className="card-title">Professional Summary</h2>
 
-          <ul className="summary">
+            <ul
+            style={{
+              paddingLeft: "20px",
+              color: "#444",
+              lineHeight: "2",
+            }}
+          >
             <li>
               Payments and POS application development: in Java & Kotlin for
               Türkiye and Slovakia markets Experience with BKM TechPOS, VUK, ÖKC
