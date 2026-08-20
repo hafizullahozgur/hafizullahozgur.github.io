@@ -47,7 +47,7 @@ export default function App() {
           <p>Phone: +90 507 609 0344</p>
           <p>Date of Birth: 15 Feb. 1988</p>
           <p>Marital Status: Married</p>
-          <p>Children: 1</p>
+          <p>Children: 1 Boy, 1 Girl</p>
         </div>
 
         {/* LANGUAGE */}
@@ -343,16 +343,15 @@ export default function App() {
             }}
           >
             <li>
-              M.Sc. Thesis: "Authentication in ATM/ITM Machines using Iris
-              Recognition Biometrics" (
+              M.Sc. Thesis:
               <a
                 href="https://scholar.google.com/citations?user=Nq4SMkUAAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Thesis
+                "Authentication in ATM/ITM Machines using Iris Recognition Biometrics"
               </a>
-              )
+              
             </li>
           </ul>
         </section>
